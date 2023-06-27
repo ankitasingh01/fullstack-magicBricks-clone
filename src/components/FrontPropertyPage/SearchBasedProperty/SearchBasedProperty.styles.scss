@@ -1,0 +1,26 @@
+.search-based-property-container {
+  padding: 20px;
+  .search-based-property-header-grid {
+    margin-bottom: 30px;
+    margin-left: -10px;
+    ::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 4px;
+      // left: 0;
+      border-radius: 2px;
+      background-clip: padding-box;
+    }
+  }
+  .search-based-property-typography {
+    color: #303030;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    ::after {
+      background-color: #ffc72c;
+    }
+  }
+}

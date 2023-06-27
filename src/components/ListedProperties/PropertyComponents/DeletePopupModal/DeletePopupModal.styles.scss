@@ -1,0 +1,10 @@
+.MuiDialog-root.dialog-container {
+  background-color: rgba($color: #d8232a, $alpha: 0.4);
+  #customized-dialog-title {
+    color: #d8232a;
+    font-weight: 600;
+    .customised-icon-button {
+      color: #d8232a;
+    }
+  }
+}

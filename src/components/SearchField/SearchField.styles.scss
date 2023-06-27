@@ -1,0 +1,27 @@
+// .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.search-toolbar-container.css-hyum1k-MuiToolbar-root {
+//   padding-left: 0px;
+//   padding-right: 0px;
+// }
+.search-field-button.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  background-color: #d8232a;
+}
+.search-autocomplete-icon {
+  color: #d8232a;
+}
+.search-flat-autocomplete.css-1w3j8y0-MuiAutocomplete-root
+  .MuiAutocomplete-tag {
+  background-color: #fbe9e9;
+
+  // .css-12qsmep-MuiButtonBase-root-MuiChip-root .MuiChip-deleteIcon {
+  //   display: none;
+  // }
+}
+.css-12qsmep-MuiButtonBase-root-MuiChip-root .MuiChip-deleteIcon {
+  display: none;
+  // &:hover {
+  //   display: "block";
+  // }
+}
+// & .MuiChip-deleteIcon {
+//   display: "none";
+// }

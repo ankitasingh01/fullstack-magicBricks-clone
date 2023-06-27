@@ -1,0 +1,54 @@
+.card-container {
+  .card-container-header {
+    .card-container-header-button {
+      color: #ffc9c9;
+    }
+    .css-1qvr50w-MuiTypography-root {
+      font-size: 14px;
+      text-align: start;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 200px;
+    }
+    .css-nrdprl-MuiTypography-root {
+      font-size: 10px;
+      text-align: start;
+    }
+  }
+}
+
+p.css-r40f8v-MuiTypography-root {
+  text-align: start;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.MuiGrid-root.MuiGrid-item.card-action-icons.css-13i4rnv-MuiGrid-root {
+  margin-left: auto;
+}
+
+.card-action-icons {
+  .icon-color {
+    color: #d8232a;
+  }
+}
+
+.card-actions-button.css-1knaqv7-MuiButtonBase-root-MuiButton-root {
+  color: #d8232a;
+  //MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall
+}
+// div > p {
+//   text-align: start;
+// }
+
+.card-content-container-child {
+  .card-content-container-subchild {
+    color: #d8232a;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}

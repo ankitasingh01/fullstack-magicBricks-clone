@@ -1,0 +1,60 @@
+.search-based-card-container {
+  padding: 24px 22px;
+  border: 1px solid rgba(255, 199, 44, 0.4);
+  cursor: pointer;
+  background-color: #fffcf3 !important;
+
+  .search-based-card-card-content {
+    margin-left: -20px;
+    margin-top: -20px;
+
+    .search-based-card-typography {
+      color: #303030;
+      font-size: 16px;
+      text-align: left;
+      text-transform: capitalize;
+      font-weight: 600;
+      line-height: 24px;
+      word-wrap: break-word; /* All browsers since IE 5.5+ */
+      overflow-wrap: break-word; /* Renamed property in CSS3 draft spec */
+      width: 230px;
+      .search-based-card-span {
+        font-size: 32px;
+        font-weight: 600;
+        background: -webkit-linear-gradient(#d8232a, #ffc72c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  .search-based-card-card-actions {
+    margin-bottom: 20px;
+    .search-based-card-card-actions-button {
+      color: #d8232a;
+      font-size: 14px;
+      font-weight: 600;
+      padding-right: 20px;
+      position: absolute;
+      line-height: 16px;
+      text-transform: capitalize;
+      .search-based-card-card-actions-arrow-icon {
+        transition: transform 0.15s ease-in-out;
+        :hover {
+          transform: scale3d(1.05, 1.05, 1);
+        }
+      }
+    }
+  }
+
+  .search-based-card-container-watch-icon {
+    color: rgba(255, 199, 44, 0.4);
+    position: absolute;
+    display: block;
+    margin-top: -32px;
+    margin-left: 218px;
+    font-size: 60px;
+  }
+}
+.key-rotate {
+  transform: rotate(270deg);
+}

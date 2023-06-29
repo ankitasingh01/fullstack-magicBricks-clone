@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import ListedProperties from "./components/ListedProperties";
 import store from "./components/reduxState/store";
 import FrontPropertyPage from "./components/FrontPropertyPage";
+import SignUp from "./Authentication/SignUp";
 // import { ListedPropertiesContextProvider } from "./components/context/ListedPropertiesContextProvider";
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
         {/* <ListedPropertiesContextProvider> */}
         <Routes>
           <Route path="/" element={<FrontPropertyPage />} />
-          {/* <Route path="/" element={<ListedProperties />} /> */}
+          <Route path="/rent" element={<ListedProperties />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
         {/* </ListedPropertiesContextProvider> */}
       </Provider>

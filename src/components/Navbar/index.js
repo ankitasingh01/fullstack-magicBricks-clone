@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -18,7 +19,62 @@ import "./Navbar.styles.scss";
 import PropertyHeader from "../PropertyHeader";
 
 const pages = ["Buy", "Rent", "Sell", "Services", "Help"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+
+const pagesLink = [
+  {
+    id: 1,
+    pageTitle: "Buy",
+    pageRoute: "buy",
+  },
+  {
+    id: 2,
+    pageTitle: "Rent",
+    pageRoute: "rent",
+  },
+  {
+    id: 3,
+    pageTitle: "Sell",
+    pageRoute: "sell",
+  },
+  {
+    id: 4,
+    pageTitle: "Services",
+    pageRoute: "services",
+  },
+  {
+    id: 5,
+    pageTitle: "Help",
+    pageRoute: "help",
+  },
+];
+
+const profileSettings = [
+  {
+    id: 11,
+    settingsName: "Profile",
+    settingsRoute: "profile",
+  },
+  {
+    id: 12,
+    settingsName: "SignIn / SignUp",
+    settingsRoute: "signup",
+  },
+  {
+    id: 13,
+    settingsName: "Account",
+    settingsRoute: "account",
+  },
+  {
+    id: 14,
+    settingsName: "Dashboard",
+    settingsRoute: "dashboard",
+  },
+  {
+    id: 15,
+    settingsName: "Logout",
+    settingsRoute: "logout",
+  },
+];
 
 const theme = createTheme({
   palette: {
@@ -101,9 +157,14 @@ function Navbar() {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                {pagesLink.map((page) => (
+                  <MenuItem
+                    key={page.id}
+                    component={Link}
+                    to={page.pageRoute}
+                    onClick={handleCloseNavMenu}
+                  >
+                    <Typography textAlign="center">{page.pageTitle}</Typography>
                   </MenuItem>
                 ))}
               </Menu>
@@ -134,13 +195,15 @@ function Navbar() {
                 display: { xs: "none", md: "flex" },
               }}
             >
-              {pages.map((page) => (
+              {pagesLink.map((page) => (
                 <Button
-                  key={page}
+                  key={page.id}
                   onClick={handleCloseNavMenu}
+                  component={Link}
+                  to={page.pageRoute}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
-                  {page}
+                  {page.pageTitle}
                 </Button>
               ))}
             </Box>
@@ -167,9 +230,16 @@ function Navbar() {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
               >
-                {settings.map((setting) => (
-                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                    <Typography textAlign="center">{setting}</Typography>
+                {profileSettings.map((setting) => (
+                  <MenuItem
+                    key={setting.id}
+                    component={Link}
+                    to={setting.settingsRoute}
+                    onClick={handleCloseUserMenu}
+                  >
+                    <Typography textAlign="center">
+                      {setting.settingsName}
+                    </Typography>
                   </MenuItem>
                 ))}
               </Menu>
